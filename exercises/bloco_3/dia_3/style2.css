@@ -1,3 +1,29 @@
-#Mário {
-    size: 50px;
+.super-mario {
+    position: absolute;
+}
+
+.goomba {
+    position: relative;
+    top: 280px;
+    left: 100px;
+}
+
+.baloon {
+    position: relative;
+    left: 250px;
+    bottom: 200px;
+}
+
+.bowser {
+    position: relative;
+    left: 250px;
+    bottom: 70px;
+}
+
+p {
+    position: relative;
+    left: 259px;
+    bottom: 40px;
+    z-index: 1;
+    font-size: 13px;
 }
