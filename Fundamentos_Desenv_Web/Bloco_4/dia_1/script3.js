@@ -1,13 +1,17 @@
-let a = 2;
+let a = 5;
 let b = 4;
+let c = 25;
 
-console.log("Adição:")
-console.log(a+b)
-console.log("Subtração:")
-console.log(a-b)
-console.log("Multiplicação:")
-console.log(a*b)
-console.log("Divisão:")
-console.log(a/b)
-console.log("Módulo:")
-console.log(a%b)
+if (a>b) {
+  if (a>c) {
+    console.log(a);
+  } else {
+    console.log(c);
+  }
+} else {
+  if (b>c) {
+    console.log(b);
+  } else {
+    console.log(c);
+  }
+}
