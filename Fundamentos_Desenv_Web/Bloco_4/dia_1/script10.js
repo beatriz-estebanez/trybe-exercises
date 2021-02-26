@@ -1,13 +1,10 @@
-let a = 2;
-let b = 4;
+// Calcula o lucro do produto
 
-console.log("Adição:")
-console.log(a+b)
-console.log("Subtração:")
-console.log(a-b)
-console.log("Multiplicação:")
-console.log(a*b)
-console.log("Divisão:")
-console.log(a/b)
-console.log("Módulo:")
-console.log(a%b)
+let custo = 9.5;
+let preco_venda = 20;
+
+let custo_total = custo + 0.2 * custo;
+
+let lucro = preco_venda - custo_total;
+
+console.log("R$ " + lucro);
