@@ -1,13 +1,9 @@
-let a = 2;
-let b = 4;
+let number1 = 50;
+let number2 = 17;
+let number3 = 28;
 
-console.log("Adição:")
-console.log(a+b)
-console.log("Subtração:")
-console.log(a-b)
-console.log("Multiplicação:")
-console.log(a*b)
-console.log("Divisão:")
-console.log(a/b)
-console.log("Módulo:")
-console.log(a%b)
+if (number1 % 2 === 0 || number2 % 2 === 0 || number3 % 2 ===0) {
+  console.log("true");
+} else {
+  console.log("false");
+}
