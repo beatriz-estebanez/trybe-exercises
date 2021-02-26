@@ -1,13 +1,9 @@
-let a = 2;
-let b = 4;
+let number = -1;
 
-console.log("Adição:")
-console.log(a+b)
-console.log("Subtração:")
-console.log(a-b)
-console.log("Multiplicação:")
-console.log(a*b)
-console.log("Divisão:")
-console.log(a/b)
-console.log("Módulo:")
-console.log(a%b)
+if (number>0) {
+  console.log("Positivo")
+} else if (number===0) {
+  console.log("Zero")
+} else {
+  console.log("Negative")
+}
