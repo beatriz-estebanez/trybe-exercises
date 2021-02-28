@@ -1,14 +1,12 @@
-// Exercício 2 - Imprime triângulo retângulo de asteriscos
+// 2- Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base.
+
 
 let n = 5;
 
 for (let lin = 1; lin <= n; lin += 1) {
-  let linha = "";
-  for (let col = 0; col < n-lin; col +=1) {
-    linha += " ";
-  }
+  let linha = '';
   for (let col = 0; col < lin; col +=1) {
-    linha += "*";
+    linha += '*';
   }
     console.log(linha);
 }
