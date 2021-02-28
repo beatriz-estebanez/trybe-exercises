@@ -15,7 +15,7 @@ if (n % 2 === 0 || n <= 1) {
     let line = '';
     let ref = (n - numAsteriscos) / 2;
     for (let col = 1; col <= n; col += 1) {
-      if (col <= ref || col > ref + numAsteriscos) {
+      if ((col <= ref) || (col > ref + numAsteriscos)) {
         line += ' ';
       } else {
         line += '*';
