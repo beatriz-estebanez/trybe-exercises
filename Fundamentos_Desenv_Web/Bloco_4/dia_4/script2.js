@@ -94,3 +94,23 @@ function soma (numero) {
 }
 
 console.log(soma(5));
+
+
+// 7. Crie uma função que receba uma string word e outra string ending . Verifique se a string ending é o final da string word . Considere que a string ending sempre será menor que a string word.
+
+function verificaFimPalavra (string, ending) {
+  let start = string.length - ending.length;
+  let equal = 0;
+  for (let indexLetter = 0; indexLetter <= ending.length-1; indexLetter += 1) {
+    if (string[indexLetter+start] === ending[indexLetter]) {
+      equal += 1;
+    }
+  }
+  if (equal === ending.length) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(verificaFimPalavra('Trybe' , 'be'));
