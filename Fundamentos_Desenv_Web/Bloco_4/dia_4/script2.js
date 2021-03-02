@@ -60,3 +60,24 @@ function nomeMaisCaracter (nome) {
 }
 
 console.log(nomeMaisCaracter(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+
+// 5. Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+
+function NumberRepeated (numbers) {
+  let repeatNumber = 0;
+  for (let num1 = 0; num1 < numbers.length; num1 += 1) {
+    let repeat = 0;
+    for (let num2 = num1+1; num2 < numbers.length; num2 +=1) {
+      if (numbers[num1] === numbers[num2]) {
+      repeat += 1;
+      }
+    }
+    if (repeat > repeatNumber) {
+      repeatNumber = numbers[num1];
+    }
+  }
+  return 'O número que mais se repete é o: ' + repeatNumber;
+}
+
+console.log(NumberRepeated([2, 3, 2, 3, 8, 2, 3]));
