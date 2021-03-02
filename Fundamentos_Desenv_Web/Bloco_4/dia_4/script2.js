@@ -81,3 +81,16 @@ function NumberRepeated (numbers) {
 }
 
 console.log(NumberRepeated([2, 3, 2, 3, 8, 2, 3]));
+
+
+// 6. Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N.
+
+function soma (numero) {
+  let soma = 0;
+  for (let indexNumber = 1; indexNumber <= numero; indexNumber += 1) {
+    soma += indexNumber;
+  }
+  return 'A soma de 1 até ' + numero + ' é ' + soma;
+}
+
+console.log(soma(5));
