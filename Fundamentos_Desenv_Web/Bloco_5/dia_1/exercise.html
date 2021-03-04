@@ -57,8 +57,12 @@
         let textoDescritivo = "Daqui a 2 anos eu me vejo trabalhando como programadora, ganhando pelo menos R$6k, ajudando meus pais e mais decidida sobre o que fazer com a minha vida, mais conhecedora de mim mesma e mais feliz!";
         insereDescricao(textoDescritivo);
    
-        document.getElementsByClassName("main-content")[0].style.backgroundColor = "rgb(76,164,109)";
+        function alteraQuadradoAmarelo (color) {
+          document.getElementsByClassName("main-content")[0].style.backgroundColor = color;
+        }
+        alteraQuadradoAmarelo("rgb(76,164,109)");
 
+        
     </script>
   </body>
 </html>
