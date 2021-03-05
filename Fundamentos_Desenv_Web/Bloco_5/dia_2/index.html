@@ -70,6 +70,12 @@
       document.querySelector('.center-content').appendChild(document.createElement('p'));
       document.querySelector('.center-content').firstChild.innerText = 'Sextouuuu com muito estudo e animação TOTAL! Bora com tudoooo!!!';
 
+      for (let i = 0; i < 2; i += 1) {
+        document.querySelector('.main-content').appendChild(document.createElement('div'));
+      }
+      document.querySelector('.center-content').nextElementSibling.className = 'left-content';
+      document.querySelector('.center-content').nextElementSibling.nextElementSibling.className = 'right-content';
+
     </script>
   </body>
 </html>
