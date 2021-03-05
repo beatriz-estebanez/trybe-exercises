@@ -64,7 +64,9 @@
       document.body.appendChild(document.createElement('div'));
       document.getElementsByTagName('div')[0].className = 'main-content';
       
-      
+      document.querySelector('.main-content').appendChild(document.createElement('div'));
+      document.getElementsByClassName('main-content')[0].firstElementChild.className = 'center-content';
+
     </script>
   </body>
 </html>
