@@ -57,24 +57,35 @@
   </head>
   <body>
     <script>
+      //tarefa 1
       let text1 = document.createElement('h1');
       document.body.appendChild(text1);
       text1.innerText = "Exercício 5.2 - JavaScript DOM";
 
+      //tarefa 2
       document.body.appendChild(document.createElement('div'));
       document.getElementsByTagName('div')[0].className = 'main-content';
       
+      //tarefa 3
       document.querySelector('.main-content').appendChild(document.createElement('div'));
       document.getElementsByClassName('main-content')[0].firstElementChild.className = 'center-content';
 
+      //tarefa 4
       document.querySelector('.center-content').appendChild(document.createElement('p'));
       document.querySelector('.center-content').firstChild.innerText = 'Sextouuuu com muito estudo e animação TOTAL! Bora com tudoooo!!!';
 
+      //tarefa 5 e 6
       for (let i = 0; i < 2; i += 1) {
         document.querySelector('.main-content').appendChild(document.createElement('div'));
       }
       document.querySelector('.center-content').nextElementSibling.className = 'left-content';
       document.querySelector('.center-content').nextElementSibling.nextElementSibling.className = 'right-content';
+
+      //tarefa 7]
+      document.querySelector('.left-content').appendChild(document.createElement('img'));
+      document.getElementsByTagName('img')[0].src = 'https://picsum.photos/200';
+      document.getElementsByTagName('img')[0].className = 'small-image';
+
 
     </script>
   </body>
