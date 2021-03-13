@@ -12,3 +12,7 @@ div {
 h2 {
   font-size: 20px;
 }
+
+p {
+  line-height: 0.5cm;
+}

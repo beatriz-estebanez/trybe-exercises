@@ -1,6 +1,7 @@
 let changeBackgroundColor = document.querySelectorAll('#cor-fundo li');
 let changeFontColor = document.querySelectorAll('#cor-texto li');
 let changeFontSize = document.querySelectorAll('#tamanho-fonte li');
+let changeHeightLine = document.querySelectorAll('#espacamento-texto li');
 
 // altera cor de fundo
 for (let index = 0; index < changeBackgroundColor.length; index += 1) {
@@ -26,5 +27,14 @@ for (let index3 = 0; index3 < changeFontSize.length; index3 += 1) {
     let newFontSize = changeFontSize[index3].id;
     console.log(newFontSize);
     document.querySelector('p').style.fontSize = newFontSize;
+  })
+}
+
+// altera o espaçamento do texto
+for (let index4 = 0; index4 < changeHeightLine.length; index4 += 1) {
+  changeHeightLine[index4].addEventListener('click', function () {
+    let newHeightLine = changeHeightLine[index4].id;
+    console.log(newHeightLine);
+    document.querySelector('p').style.lineHeight = newHeightLine;
   })
 }
