@@ -2,6 +2,12 @@ let changeBackgroundColor = document.querySelectorAll('#cor-fundo li');
 let changeFontColor = document.querySelectorAll('#cor-texto li');
 let changeFontSize = document.querySelectorAll('#tamanho-fonte li');
 let changeHeightLine = document.querySelectorAll('#espacamento-texto li');
+let changefontFamily = document.getElementsByName('fontFamily');
+//console.log(changefontFamily);
+//console.log(changefontFamily[0].value);
+
+// tentar colocar tudo em 1 função
+// trocar por for in
 
 // altera cor de fundo
 for (let index = 0; index < changeBackgroundColor.length; index += 1) {
@@ -36,5 +42,17 @@ for (let index4 = 0; index4 < changeHeightLine.length; index4 += 1) {
     let newHeightLine = changeHeightLine[index4].id;
     console.log(newHeightLine);
     document.querySelector('p').style.lineHeight = newHeightLine;
+  })
+}
+
+// altera a fonte
+//document.querySelector('p').style.fontFamily = changefontFamily.values
+for (let index5 = 0; index5 < changefontFamily.length; index5 += 1) {
+  changefontFamily[index5].addEventListener('click', function () {
+    if (changefontFamily[index5].checked === true) {
+      let newFont = changefontFamily[index5].value;
+      console.log(newFont);
+      document.querySelector('#text').style.fontFamily = newFont;
+    }
   })
 }
