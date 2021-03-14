@@ -4,13 +4,29 @@ h1 {
 }
 
 div {
-  border: 1px solid blue;
+  border: 2px solid grey;
   padding: 10px 30px;
   text-align: justify;
 
 }
 
-div
+#content-read {
+  display: inline-block;
+  width: 600px;
+  height: 500px
+  justify-content:  ;
+
+}
+
+aside {
+  display: inline-block;
+  justify-content: ;
+
+}
+
+aside div {
+  margin: 5px;
+}
 
 h2 {
   font-size: 20px;
