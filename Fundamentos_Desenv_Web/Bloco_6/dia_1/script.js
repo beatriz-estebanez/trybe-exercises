@@ -5,6 +5,7 @@ let statesOfBrazil = ['Acre','Alagoas','Amapá','Amazonas','Bahia','Ceará','Esp
 for (let index = 0; index < statesOfBrazil.length; index += 1) {
   let newState = document.createElement('option');
   newState.innerText = statesOfBrazil[index];
+  newState.value = statesOfBrazil[index];
   brasilianStates.appendChild(newState);
 }
 
@@ -36,27 +37,34 @@ let botaoTeste = document.querySelector('#teste');
 
 function teste () {
 
+  // imprime as respostas que são Input
   let sizeInputs = document.getElementsByTagName('input').length;
-  //const nome = document.getElementById('name').parentNode.innerText;
+
   console.log(sizeInputs)
 
   for (let i = 0; i < sizeInputs; i += 1) {
     
     const element = document.getElementsByTagName('input')[i].parentNode.innerText;
 
-  //let res = document.querySelector('#name').value;
     let res = document.getElementsByTagName('input')[i].value;
 
     const respostas = document.getElementById('answers');
-
-  //let parag = '<p>' + nome + ' ' + res + '</p>';
-  //console.log(parag);
 
     let newParag = document.createElement('p');
     newParag.innerText = element + ' ' + res;
 
     respostas.appendChild(newParag);
   }
+
+  // imprime a resposta do Estado - select
+  let newParag = document.createElement('p');
+  newParag.innerText = 'Estado: ' + brasilianStates.value;
+
+  const respostas = document.getElementById('answers');
+  respostas.appendChild(newParag);
+
+
+  // imprime a resposta do resumo - textArea
 }
 
 botaoTeste.addEventListener('click', teste);
