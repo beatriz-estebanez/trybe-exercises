@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+/* <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -14,4 +14,16 @@
   <input type="checkbox">Lembre-me
   <button id='botao'>Entrar</button>
 </body>
-</html>
+</html> */
+
+let dataInicio = '15/11/1994';
+console.log(dataInicio.length);
+
+//for (let ind = 0; ind < dataInicio.length; ind += 1) {
+  let dia = parseInt(dataInicio[0] + dataInicio[1]);
+  let mes = parseInt(dataInicio[3] + dataInicio[4]);
+  let ano = parseInt(dataInicio[6] + dataInicio[7] + dataInicio[8] + dataInicio[9]);
+//}
+console.log(dia);
+console.log(mes);
+console.log(ano);
