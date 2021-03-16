@@ -3,3 +3,7 @@
   padding: 0;
   box-sizing: border-box; /*(peremite trabalhar com altura e largura e não deixa o padding atrapalhar isso)*/
 }
+
+#answers {
+  border: 1px solid grey;
+}
