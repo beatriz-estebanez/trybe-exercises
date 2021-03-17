@@ -58,3 +58,16 @@ function teste () {
 }
 
 botaoTeste.addEventListener('click', teste);
+
+let botaoClean = document.querySelector('#clean');
+
+function cleanAnswers () {
+  const paragrafos = document.querySelector('#answers').children;
+  console.log(paragrafos)
+  const sizeParag = paragrafos.length;
+  for (let ind = 0; ind < sizeParag; ind += 1) {
+    document.getElementById('answers').firstElementChild.remove();
+  }
+}
+
+botaoClean.addEventListener('click', cleanAnswers);
