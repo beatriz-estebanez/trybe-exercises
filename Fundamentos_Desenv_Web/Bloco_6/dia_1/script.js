@@ -16,6 +16,7 @@ let botaoTeste = document.querySelector('#teste');
 /* function blockSubmission(event) {
   event.preventDefault()
 } */
+const valideDate = false;
 
   function checkDate () {
     date = dataInicio.value;
@@ -24,7 +25,8 @@ let botaoTeste = document.querySelector('#teste');
     let ano = parseInt(date[6] + date[7] + date[8] + date[9]);
     if (dia < 0 || dia > 31 || mes < 0 || mes > 12 || ano < 0) {
       alert('Preencha a data no formato padrão: dd/mm/aaaa');
-      blockSubmission();
+    } else {
+      valideDate = true;
     }
   }
   
@@ -35,39 +37,42 @@ let botaoTeste = document.querySelector('#teste');
 
 // consolidação dos dados
 
-function teste () {
-
+function teste (event) {
+  event.preventDefault()
   // imprime as respostas que são Input
-  let sizeInputs = document.getElementsByTagName('input').length;
-  for (let i = 0; i < sizeInputs; i += 1) {
-    const element = document.getElementsByTagName('input')[i].parentNode.innerText;
-    let res = document.getElementsByTagName('input')[i].value;
-    const respostas = document.getElementById('answers');
+  if (valideDate === true) {
+    let sizeInputs = document.getElementsByTagName('input').length;
+    for (let i = 0; i < sizeInputs; i += 1) {
+      const element = document.getElementsByTagName('input')[i].parentNode.innerText;
+      let res = document.getElementsByTagName('input')[i].value;
+      const respostas = document.getElementById('answers');
+      let newParag = document.createElement('p');
+      newParag.innerText = element + ' ' + res;
+      respostas.appendChild(newParag);
+    }
+    // imprime a resposta do Estado - select
     let newParag = document.createElement('p');
-    newParag.innerText = element + ' ' + res;
+    newParag.innerText = 'Estado: ' + brasilianStates.value;
+    const respostas = document.getElementById('answers');
     respostas.appendChild(newParag);
+    // imprime a resposta do resumo - textArea
+    let newParag2 = document.createElement('p');
+    newParag2.innerText = 'Resumo currículo: ' + document.getElementById('resume').value;
+    respostas.appendChild(newParag2);
   }
-
-  // imprime a resposta do Estado - select
-  let newParag = document.createElement('p');
-  newParag.innerText = 'Estado: ' + brasilianStates.value;
-  const respostas = document.getElementById('answers');
-  respostas.appendChild(newParag);
-
-  // imprime a resposta do resumo - textArea
 }
 
+botaoTeste.addEventListener('click', checkDate);
 botaoTeste.addEventListener('click', teste);
 
-let botaoClean = document.querySelector('#clean');
-
+// limpa as repostas
 function cleanAnswers () {
   const paragrafos = document.querySelector('#answers').children;
-  console.log(paragrafos)
   const sizeParag = paragrafos.length;
   for (let ind = 0; ind < sizeParag; ind += 1) {
     document.getElementById('answers').firstElementChild.remove();
   }
 }
 
+let botaoClean = document.querySelector('#clean');
 botaoClean.addEventListener('click', cleanAnswers);
