@@ -27,7 +27,7 @@ p {
 @media screen and (min-width: 1000px) {
   body {
     background-color: rgb(168, 192, 216);
-    font-size: 25px;
+    font-size: 21px;
     margin: 60px;
   }
 
@@ -51,5 +51,35 @@ p {
   .figure-container figure {
     flex-basis: 40%;
     width: 
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    background-color: rgb(209, 164, 206);
+    font-size: 18px;
+    margin: auto;
+    max-width: 1150px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .figure-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 1;
+    justify-content: center;
+  }
+
+  .figure-container figure {
+    flex-basis: 25%;
   }
 }
