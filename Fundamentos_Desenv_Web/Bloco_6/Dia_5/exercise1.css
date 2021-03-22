@@ -23,3 +23,33 @@ figure {
 p {
   text-align: justify;
 }
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: rgb(168, 192, 216);
+    font-size: 28px;
+    margin: 60px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  .figure-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 95%;
+    justify-content: center;
+  }
+
+  .figure-container figure {
+    flex-basis: 40%;
+    width: 
+  }
+}
