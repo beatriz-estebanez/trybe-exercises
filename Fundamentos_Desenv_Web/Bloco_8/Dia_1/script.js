@@ -3,7 +3,6 @@ const personInfo = (nome) => {
   return { nomeCompleto: nome, email: `${email}@trybe.com` };
 }
 
-
 const newEmployees = (callback) => {
   const employees = {
     id1: callback('Pedro Guerra'),// Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro
