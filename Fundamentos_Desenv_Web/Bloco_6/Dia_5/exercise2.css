@@ -6,10 +6,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  margin: ;
-}
-
 .header-container {
   display: flex;
   flex-direction: column;
@@ -27,6 +23,7 @@ body {
   text-align: center;
   font-weight: bold;
   text-shadow: 2px 2px 4px gray;
+  padding: 10px 20px;
 }
 
 .links-container {
@@ -88,3 +85,5 @@ footer h3 {
 footer p {
   text-align: justify;
 }
+
+
