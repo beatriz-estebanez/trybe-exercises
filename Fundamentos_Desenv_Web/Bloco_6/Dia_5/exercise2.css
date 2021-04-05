@@ -88,7 +88,6 @@ footer p {
 
 
 @media screen and (min-width: 450px) and (max-width: 800px) {
-
   
   .header-container nav {
     border: 2px solid gainsboro;
@@ -159,6 +158,76 @@ footer p {
   
   footer p {
     font-size: 23px;
+  }
+  
+}
+
+
+@media screen and (min-width: 800px) {
+  
+  .header-container nav {
+    border-top: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
+    border-left: 0px;
+    border-right: 0px;
+    font-weight: 700;
+    margin: 0px 300px;
+  }
+  
+  .header-container .title {
+    font-size: 42px;
+    padding: 5px 30px;
+  }
+  
+  .links-container {
+    height: 35px;
+  }
+  
+  .links-container p {
+    font-size: 20px;
+  }
+
+  .main-container {
+    padding: 10px 40px;
+  }
+
+  .aside-container {
+    display: inline-block;
+    position: absolute;
+    width: 22%;
+    left: 73%;
+    margin-top: 25px ;
+  }
+  
+  aside {
+    display: inline-block;
+    padding: 5px 20px;
+    padding-right: 35px;
+  }
+  
+  .aside-two {
+    margin-top: -15px;
+  }
+  
+  aside h2 {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  h1 {
+    font-size: 25px;
+  }
+  
+  article {
+    display: inline-block;
+    width: 70%;
+    font-size: 20px;
+    margin: 0px 10px;
+  }
+  
+  footer {
+    padding: 15px 55px;
+    font-size: 17px;
   }
   
 }
