@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/CSS" href="node_modules/bulma-calendar/dist/css/bulma-calendar.min.css">
+  <link rel="stylesheet" type="text/CSS" href="node_modules/bulma/css/bulma.min.css">
+  <link rel="stylesheet" type="text/CSS" href="style.css">
+</head>
+<body>
+  <form action="" method="GET">
+    <h1 class='title'>FORMULÁRIO</h1><br>
+    <h2 class='subtitle'>Dados pessoais</h2>
+    <div class='field'>
+      <div class='control'>
+        <label class='label'for="name">Nome:
+          <input class='input' type="text" id='name' maxlength="40" placeholder="Insira seu nome" required>
+        </label><br>
+      </div>
+      <div class='control'>
+        <label class='label'for="email">E-mail:
+            <input class='input' type="email" id='email' maxlength="50" required data-validate-field>
+        </label><br>
+      </div>
+      <div class='control'>
+        <label class='label'for="cpf">CPF:
+          <input class='input' type="text" id='cpf' maxlength="11" required autocomplete="off">
+        </label><br>
+      </div>
+      <div class='control'>
+        <label class='label'for="endereco">Endereço:
+          <input class='input' type="text" id='endereco' maxlength="200" required autocomplete="off">
+        </label><br>
+      </div>
+      <div class='control'>
+        <label class='label'for="cidade">Cidade:
+          <input class='input' type="text" id="cidade" maxlength="28" required>
+        </label><br>
+      </div>
+      <div class='control'>
+        <label class='label'for="estado">Estado:</label>
+        <div class='select is-rounded'>
+          <select name="states" id="estados" required></select>
+        </div>
+      </div><br>
+      <div class='control' id='tipo-moradia'>
+        <h3 class='label'>Tpo de moradia:</h3>
+          <label class='label' for="casa"><input class='radio' type="radio" name="type-place" id="casa" value='casa' checked>Casa</label>
+          <label class='label' for="apt"><input class='radio' type="radio" name="type-place" id="apt" value='apt'>Apartamento</label>
+      </div>
+    </div>
+    <hr>
+    <div class='field'>
+      <h2 class='subtitle'>Dados do último emprego</h2>
+      <div class='control'>
+        <label class='label'for="resume">Resumo do currículo:
+          <textarea class='textarea' id="resume" maxlength="1000" cols="40" rows="10" required></textarea>
+        </label>
+      </div>
+      <div class='control'>
+        <label class='label'for="cargo">Cargo:
+          <input class='input' type="text" id='cargo' maxlength="40" required>
+        </label><br>
+      </div>
+      <div class='control'>
+        <label class='label'for="descricao-cargo">Descrição do cargo:
+          <input class='input' type="text" id="descricao-cargo" maxlength="500" required>
+        </label>
+      </div><br>
+      <div class="control">
+        <label class='label'for="data-inicio">Data de início:
+          <input class='input' type="date" id="data-inicio" required>
+        </label>
+      </div><br>
+    </div>
+    <button class='button is-success' type="submit" id='button-submit'>Enviar</button>
+    <button class='button is-danger' type="reset" id='clean'>Limpar</button>
+    <button class='button is-info' type='button' id='button-answers'>Ver Respostas</button>
+  </form>
+  <br><br>
+  <div id='answers'>
+    <p class='subtitle'>Respostas</p>
+  </div>
+  <script src="node_modules/bulma-calendar/dist/js/bulma-calendar.min.js"></script>
+  <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

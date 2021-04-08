@@ -1,0 +1,25 @@
+body {
+  max-width: 800px;
+  width: 100%;
+  padding: 30px;
+  margin: auto;
+}
+
+h1 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+#tipo-moradia label {
+  display: inline;
+}
+
+#data-inicio {
+  display: block;
+  width: 180px;
+}
+
+button {
+  width: 120px;
+  margin: 3px;
+}
