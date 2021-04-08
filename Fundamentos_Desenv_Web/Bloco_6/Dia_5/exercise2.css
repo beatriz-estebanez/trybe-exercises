@@ -1,0 +1,233 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.header-container nav {
+  border: 1px solid gainsboro;
+  font-weight: 700;
+  margin: 0px 12px;
+}
+
+.header-container .title {
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px gray;
+  padding: 10px 20px;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 30px;
+  align-items: center;
+  margin: 0px auto;
+  justify-content: space-around;
+}
+
+.links-container p {
+  font-size: 15px;
+}
+
+hr {
+  background-color: grey;
+  width: 70%;
+}
+
+aside {
+  background-color: gainsboro;
+  padding: 5px 20px;
+}
+
+.aside-two {
+  margin-top: -15px;
+}
+
+aside h2 {
+  text-align: center;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 22px;
+  text-align: center;
+}
+
+article {
+  margin: 0px 20px;
+  padding: 5px 15px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+footer {
+  background-color: gainsboro;
+  padding: 10px 30px;
+  font-size: 15px;
+}
+
+footer h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+footer p {
+  text-align: justify;
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
+  
+  .header-container nav {
+    border: 2px solid gainsboro;
+    margin: 0px 50px;
+  }
+  
+  .header-container .title {
+    font-size: 45px;
+    padding: 10px 30px;
+  }
+  
+  .links-container {
+    height: 50px;
+  }
+  
+  .links-container p {
+    font-size: 25px;
+  }
+
+  .aside-container {
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 20px;
+  }
+  
+  aside {
+    height: 100%;
+    font-size: 23px;
+  }
+  
+  .aside-one {
+    width: 65%;
+    margin: 10px 15px;
+    border-right: 1px solid whitesmoke;
+  }
+
+  .aside-two {
+    margin: 10px 15px;
+    width: 35%;
+  }
+  
+  aside h2 {
+    font-size: 25px;
+  }
+  
+  h1 {
+    font-size: 35px;
+  }
+  
+  article {
+    margin: 20px 40px;
+    padding: 5px 15px;
+    font-size: 30px;
+  }
+  
+  footer {
+    padding: 10px 40px;
+    font-size: 15px;
+  }
+  
+  footer h3 {
+    font-size: 25px;
+  }
+  
+  footer p {
+    font-size: 23px;
+  }
+  
+}
+
+
+@media screen and (min-width: 800px) {
+  
+  .header-container nav {
+    border-top: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
+    border-left: 0px;
+    border-right: 0px;
+    font-weight: 700;
+    margin: 0px 300px;
+  }
+  
+  .header-container .title {
+    font-size: 42px;
+    padding: 5px 30px;
+  }
+  
+  .links-container {
+    height: 35px;
+  }
+  
+  .links-container p {
+    font-size: 20px;
+  }
+
+  .main-container {
+    padding: 10px 40px;
+  }
+
+  .aside-container {
+    display: inline-block;
+    position: absolute;
+    width: 22%;
+    left: 73%;
+    margin-top: 25px ;
+  }
+  
+  aside {
+    display: inline-block;
+    padding: 5px 20px;
+    padding-right: 35px;
+  }
+  
+  .aside-two {
+    margin-top: -15px;
+  }
+  
+  aside h2 {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  h1 {
+    font-size: 25px;
+  }
+  
+  article {
+    display: inline-block;
+    width: 70%;
+    font-size: 20px;
+    margin: 0px 10px;
+  }
+  
+  footer {
+    padding: 15px 55px;
+    font-size: 17px;
+  }
+  
+}
