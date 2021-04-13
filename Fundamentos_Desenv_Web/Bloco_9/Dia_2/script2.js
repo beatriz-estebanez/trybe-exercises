@@ -23,7 +23,8 @@ const checkSumArray = () => {
       reject('É mais de oito mil! Essa promise deve estar quebrada!');
     }
   })
-  .then(sum => console.log(resultDivision(sum)))
+  .then(sum => resultDivision(sum))
+  .then(newArray => newArray.reduce((acc, crr) => acc + crr, 0))
   .catch(error => console.log(error));
 }
 
