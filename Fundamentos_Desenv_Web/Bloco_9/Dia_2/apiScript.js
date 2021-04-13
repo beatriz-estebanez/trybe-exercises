@@ -1,0 +1,23 @@
+// apiScript.js     
+
+//document.querySelector('h1').innerText = 'Bia linda!!!';
+//const fetch = require('node-fetch');
+const API_URL = 'https://icanhazdadjoke.com/';
+
+const newJoke = document.createElement('p');
+document.querySelector('body').appendChild(newJoke);
+
+const fetchJoke = () => {
+  const myObject = {
+    method: 'GET',
+    headers: { 'Accept': 'application/json' }
+  };
+
+  fetch(API_URL, myObject)
+    .then(response => response.json())
+    .then(data => data.joke)
+    .then(joke => newJoke.innerText = joke);
+};
+
+//fetchJoke();
+window.onload = () => fetchJoke();
