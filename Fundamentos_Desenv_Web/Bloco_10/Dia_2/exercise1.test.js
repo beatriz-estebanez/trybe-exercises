@@ -2,10 +2,9 @@ const uppercase = (str, callback) => {
   callback(str.toUpperCase());
 };
 
-describe('testing uppercase function', (done) => {
+describe('testing uppercase function', () => {
   it('testing callback', () => {
-    uppercase('bia', (result) =>
+    return uppercase('bia', (result) =>
       expect(result).toBe('BIA'));
-      done();
   })
 })
