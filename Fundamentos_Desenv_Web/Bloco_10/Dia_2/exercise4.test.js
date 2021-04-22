@@ -11,13 +11,6 @@ const getRepos = (url) => {
     });
 };
 
-/* const teste = async () => {
-  const result = await getRepos('https://api.github.com/orgs/tryber/repos');
-  console.log(result);
-}
-
-teste(); */
-
 
 describe('testing getRepos function', () => {
   it('return that two repos are in the list', () => {
