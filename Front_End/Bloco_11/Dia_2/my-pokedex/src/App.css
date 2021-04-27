@@ -1,5 +1,12 @@
+* {
+  margin: 10px;
+}
+
 .App {
   text-align: center;
+  height: 1500px;
+  width: 70%;
+  margin: auto;
 }
 
 .App-logo {
@@ -35,4 +42,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.pokemon {
+  width: 300px;
+  background-color: lightgray;
+  border-radius: 5%;
+  box-shadow: 10px 10px 10px gray ;
+  height: 30%;
+  width: 30%;
+}
+
+.pokemon img {
+  width: 100%;
+  margin: 0px 10px;
+}
+
+.pokemon h1 {
+  font-size: 35px;
+}
+
+.pokedex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100%;
 }
